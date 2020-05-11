@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyectos de Redmine</title>
+</head>
+<body>
+	<h1>Proyectos de redmine</h1> 
+    <ul>
+		{% for elem in lista -%}
+				<li><a href="/proyecto/{{elem.id}}">{{ elem.name }}</a></li>
+		{% endfor -%}
+	</ul>
+</body>
+</html>
